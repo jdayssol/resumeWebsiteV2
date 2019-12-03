@@ -6,9 +6,9 @@ module.exports = function (grunt) {
     // Tasks
     sass: { // Begin Sass Plugin
       dist: {
-        options: {
-          sourcemap: 'none'
-        },
+        //options: {
+         // sourcemap: 'none'
+        //},
         files: [{
           expand: true,
           cwd: 'scss',
