@@ -7,7 +7,7 @@
 /*============================================================= Extend variables =============================================================*/
 @import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i|Nunito+Sans:900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Yantramanav:100&display=swap");
-.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, .section-home .company .infos .logo-skills, html,
+.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, html,
 body, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, .badge p, .cards h4,
@@ -24,7 +24,7 @@ p {
   padding: 0;
   margin: 0; }
 
-.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, .section-home .company .infos .logo-skills {
+.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul {
   list-style: none; }
 
 .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a, header nav .logo {
@@ -63,13 +63,13 @@ body {
   font-weight: 400;
   font-style: normal; }
 
-em, small, .section-home .company .description-company .date-experience {
+em, small {
   font-family: "Muli", sans-serif;
   font-weight: 400;
   font-style: italic; }
 
 h3, h5, strong, a,
-.breadcrumbs-links a, .btn, .error, footer, header nav .logo, .section-home .company .description-company h4 {
+.breadcrumbs-links a, .btn, .error, footer, header nav .logo {
   font-family: "Muli", sans-serif;
   font-weight: 700;
   font-style: normal; }
@@ -4442,6 +4442,7 @@ table {
   box-shadow: 2px 0 4px 0 #f3f3f3; }
 
 /*============================================================ Imports ============================================================*/
+/*============================================================= Colors =============================================================*/
 /*============================================================ Background Colors ============================================================*/
 .bg-black {
   background-color: #000; }
@@ -4458,7 +4459,7 @@ table {
 /*============================================================ Nav Height ============================================================*/
 /*============================================================= Mixins =============================================================*/
 /*=============================================== Constants ===============================================*/
-.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, .section-home .company .infos .logo-skills, html,
+.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, html,
 body, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, .badge p, .cards h4,
@@ -4475,7 +4476,7 @@ p {
   padding: 0;
   margin: 0; }
 
-.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul, .section-home .company .infos .logo-skills {
+.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, header nav ul {
   list-style: none; }
 
 .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a, header nav .logo {
@@ -4509,13 +4510,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 
-em, small, .section-home .company .description-company .date-experience {
+em, small {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: italic; }
 
 h3, h5, strong, a,
-.breadcrumbs-links a, .btn, .error, footer, header nav .logo, .section-home .company .description-company h4 {
+.breadcrumbs-links a, .btn, .error, footer, header nav .logo {
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
@@ -4690,62 +4691,26 @@ header {
       text-align: left;
       color: #ffffff; }
 
-.section-home .company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-box-pack: flex-start;
-  -ms-flex-pack: flex-start;
-  justify-content: flex-start;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #c6c6c6;
-  padding-top: 50px; }
-  .section-home .company ul {
-    margin-top: 0;
-    margin-bottom: 0; }
-  .section-home .company .infos {
-    width: 300px;
-    margin-right: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .section-home .company .infos .logo-skills {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: flex-end;
-      -ms-flex-align: flex-end;
-      align-items: flex-end;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-      align-self: flex-end; }
-      .section-home .company .infos .logo-skills li {
-        max-width: 50px;
-        max-height: 50px; }
-        .section-home .company .infos .logo-skills li img {
-          width: 100%;
-          height: 100%;
-          max-width: 50px;
-          max-height: 50px; }
-  .section-home .company .description-company h4 {
-    font-size: 25px; }
-  .section-home .company .description-company .date-experience {
-    margin-bottom: 20px; }
-  .section-home .company:first-child {
-    padding-top: 0; }
-  .section-home .company:last-child {
-    border-bottom: none; }
+/*============================================================ Experience ============================================================*/
+.container-experience {
+  padding: 100px 5%; }
+  .container-experience section {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #c6c6c6;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+    .container-experience section:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+    .container-experience section .infos {
+      width: 250px;
+      float: left;
+      margin-right: 50px; }
+    .container-experience section .description-company {
+      width: calc(100% - 50px - 250px) !important;
+      float: left; }
 
 /*============================================================ Helpers ============================================================*/
 /*============================================================= Helpers =============================================================*/
