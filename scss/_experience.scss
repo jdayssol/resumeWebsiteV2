@@ -1,0 +1,33 @@
+/*============================================================ Experience ============================================================*/
+
+.container-experience {
+    padding: 100px 5%;
+
+    section {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        $margin-right: 50px;
+        $width-infos: 250px;
+
+        .infos {
+            width: $width-infos;
+            float: left;
+            margin-right: $margin-right;
+        }
+
+        .description-company {
+            width: calc(100% - #{$margin-right} - #{$width-infos}) !important;
+            float: left;
+        }
+    }
+}

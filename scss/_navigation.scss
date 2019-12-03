@@ -6,7 +6,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 20px 5%;
+    padding: 10px 5%;
     z-index: 999;
     background-color: $primary;
     
@@ -39,6 +39,12 @@ header {
                 a {
                     color: $white;
                     text-decoration: none;
+
+                    
+
+                    &:visited {
+                        color: $white;
+                    }
 
                     &:hover {
                         color: $secondary;
