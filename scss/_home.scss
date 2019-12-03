@@ -46,9 +46,11 @@
         }
 
         .infos {
-            width: 25%;
+            // width: 25%;
+            width: 300px;
             margin-right: 50px;
             padding-bottom: 50px;
+            // max-width: 300px;
 
             display: flex;
             flex-wrap: wrap;

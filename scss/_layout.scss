@@ -9,6 +9,10 @@
     position: relative;
     
     .section-home {
-        padding: 50px 5%; 
+        padding: $nav-height+10px 5%;
+        margin: {
+            top: 0;
+            bottom: 0;
+        }
     } 
 }
