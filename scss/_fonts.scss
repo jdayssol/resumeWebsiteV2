@@ -1,0 +1,102 @@
+/*=============================================== Fonts ===============================================*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Yantramanav:100&display=swap");
+
+%titles {
+	font-family: "Yantramanav", sans-serif;
+}
+
+%body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+}
+
+%body-italic {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+%body-bold {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+%body-bold-italic {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+$line-height: 1.8;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	@extend %paMar;
+}
+
+h1 {
+	@extend %titles;
+	$font-size: 50px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+h2 {
+	@extend %titles;
+	$font-size: 35px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+h3 {
+	@extend %body-bold;
+	$font-size: 25px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+h4 {
+	@extend %titles;
+	$font-size: 20px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+h5 {
+	@extend %body-bold;
+	$font-size: 18px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+h6 {
+	@extend %titles;
+	$font-size: 16px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+p, ul {
+	@extend %body;
+	$font-size: 16px;
+	font-size: $font-size;
+	line-height: $font-size*$line-height;
+}
+
+strong {
+	@extend %body-bold;
+}
+
+em {
+	@extend %body-italic;
+}
+
+.bold-italic {
+	@extend %body-bold-italic;
+}

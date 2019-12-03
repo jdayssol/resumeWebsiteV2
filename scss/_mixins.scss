@@ -1,0 +1,79 @@
+/*============================================================= Mixins =============================================================*/
+
+@mixin flexbox($align, $justify, $wrap) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-align: $align;
+	-ms-flex-align: $align;
+	align-items: $align;
+
+	-webkit-box-pack: $justify;
+	-ms-flex-pack: $justify;
+	justify-content: $justify;
+
+	-ms-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+@mixin transition($property, $duration, $function) {
+	-webkit-transition: $property $duration $function;
+	-moz-transition: $property $duration $function;
+	-ms-transition: $property $duration $function;
+	-o-transition: $property $duration $function;
+	transition: $property $duration $function;
+}
+
+@mixin transform($method) {
+	-moz-transform: $method;
+	-webkit-transform: $method;
+	-o-transform: $method;
+	-ms-transform: $method;
+	transform: $method;
+}
+
+@mixin transform-origin($method) {
+	-moz-transform-origin: $method;
+	-webkit-transform-origin: $method;
+	-o-transform-origin: $method;
+	-ms-transform-origin: $method;
+	transform-origin: $method;
+}
+
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin box-sizing($property) {
+	-moz-box-sizing: $property;
+	-webkit-box-sizing: $property;
+	box-sizing: $property;
+}
+
+@mixin icon($unicode) {
+	font-family: "fajny-css-icons";
+	content: $unicode;
+}
+
+/*=============================================== Constants ===============================================*/
+
+%paMar{
+     padding: 0;
+     margin: 0;
+ }
+ 
+ %ulNone{
+     list-style: none;
+     @extend %paMar;
+ }
+ 
+ %flexCenter{
+	 @include flexbox(center, center, nowrap);
+ }
+ 
+ %bgCenter{
+     background-position: center !important;
+     background-size: cover !important;
+ }

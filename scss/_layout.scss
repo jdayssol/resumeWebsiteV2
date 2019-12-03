@@ -1,0 +1,14 @@
+/*============================================================ Layout ============================================================*/
+
+.container {
+    width: 100%;
+    max-width: inherit;
+    float: left;
+    background-color: $white;
+    z-index: 10;
+    position: relative;
+    
+    .section-home {
+        padding: 100px 5%;
+    } 
+}

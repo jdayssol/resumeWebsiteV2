@@ -1,0 +1,29 @@
+/*============================================================ Colors ============================================================*/
+
+$black: #000;
+$white: #FFF;
+$primary: #A7BED3;
+$primary75: #BDCFDE;
+$primary50: #D3DEE9;
+$secondary: #F1FFC4;
+$secondary75: #F5FFD3;
+$secondary50: #F8FFE1;
+$light-gray: #D9D9D9;
+
+/*============================================================ Background Colors ============================================================*/
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
