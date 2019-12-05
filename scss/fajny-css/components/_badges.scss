@@ -9,4 +9,24 @@
 	p {
 		@extend %paMar;
 	}
+
+	&.bg-primary {
+		color: #6B7987;
+	}
+
+	&.bg-secondary {
+		color: #9AA37D;
+	}
+
+	&.bg-success {
+		color: #618C32;
+	}
+
+	&.bg-danger {
+		color: #A3201E;
+	}
+
+	&.bg-warning {
+		color: #9C3E23;
+	}
 }

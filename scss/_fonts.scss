@@ -42,14 +42,14 @@ p {
 
 h1 {
 	@extend %titles;
-	$font-size: 50px;
+	$font-size: 60px;
 	font-size: $font-size;
 	line-height: $font-size*$line-height;
 }
 
 h2 {
 	@extend %titles;
-	$font-size: 35px;
+	$font-size: 50px;
 	font-size: $font-size;
 	line-height: $font-size*$line-height;
 }

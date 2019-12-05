@@ -3,3 +3,4 @@
 *.iml
 node_modules
 .sass-cache
+Gruntfile.js
