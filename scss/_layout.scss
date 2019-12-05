@@ -38,6 +38,24 @@
     } 
 }
 
+.company-img-band {
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  max-height: 200px;
+  height: inherit;
+  display: block;
+}
+
+.company-img {
+  width: 100px;
+  max-width: 150px;
+  height: 100px;
+  max-height: 150px;
+  height: inherit;
+  display: block;
+}
+
 .cv {
   width: 200px;
         height: inherit;
@@ -60,6 +78,12 @@
   margin-right: auto;
 }
 
+.badge {
+  p {
+		font-weight: bold;
+	}
+}
+
 @media screen and (min-width: 40em) {
   .grid-1 { width: 16.6666666%; }
   .grid-2 { width: 33.3333333%; }
@@ -71,8 +95,13 @@
 
 /* Testimonials */
 .testimonial {
+    padding: $nav-height+10px 5%;
+    margin: {
+        top: 0;
+        bottom: 0;
+    }
     text-align: center;
-    margin-bottom: 30px;
+
 
     img {
         width: inherit;

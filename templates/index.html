@@ -12,7 +12,7 @@
         <!-- CSS -->
         <!-- <link rel="stylesheet" href="/css/fajny-css/fajny.css" type="text/css" /> -->
         <link rel="stylesheet" href="https://unpkg.com/fajny-css-icons/css/fajny-icons.min.css" type="text/css" />
-        <link rel="stylesheet" href="../static/css/style.min.css">
+        <link rel="stylesheet" href="../static/css/style.css">
 
 
     </head>
@@ -70,188 +70,95 @@
             </section>
 
             <section class="section-education">
-                <div class="infos">
-                    <a href="#" target="_blank">
-                        <img src="../static/images/degree2.jpg" style="border-radius: 49.9%;" alt="">
-                    </a>
-                </div>
-
                 <div class="description-education">
                     <h2>Education</h2>
                     <p>University Paris-Sorbonne : MBA - Master of Enterprise Administration.</p>
                     <p>University Pasquale Paoli, Corsica : Master degree in computer science.</p>
                 </div>
+                <div class="infos">
+                        <a href="#" target="_blank">
+                            <img src="../static/images/degree2.jpg" style="border-radius: 49.9%;" alt="">
+                        </a>
+                    </div>
             </section>
 
             <section class="section-timeline section-home" id="timeline">
-                <ol class="timeline">
+                <ol class="timeline .container-timeline">
                     <li>
-                        <h5>Wibas IO - Lead Software engineer</h5>
-                        <small>Feb. 2019 - actual position - Hamburg</small>
-                        <p>Wibas IO is an IT consulting company.
-                            <br>As a app engineer, I create a complete solution from scratch to manage german tax
-                            declaration on line</p>
+                                                <img src="../static/images/wibas.png" alt="Wibas" class="company-img-band">
+                                                <h5> Lead Software engineer</h5> 
+                                                <small>Feb. 2019 - actual position - Hamburg</small>
+                                                <br/>
+                                                        <br/>Wibas IO is a IT company located in Hamburg.
+                                                        <br/>App engineer - Starting from scratch, free choice of the architecture and technology.
+                                                        <br/>
+                                                        <h6>Tasks and achievements:</h6>
+                                                            <br/>Construction of the CI/ CD chain using Gitlab and Heroku.
+                                                            <br/>Implementation of the back office website using Angular and of the backend using Java/Springboot.
+                                                            <br/> Implementation of the API to communicate with tax office (Elster).
+                                                            <br/>Implementation of unit tests using SpringBootTest and of integration tests using Postman.
+                                                            <br/>
+                                                            <div class="badge bg-primary"><p>Angular 7</p></div>
+                                                            <div class="badge bg-secondary"><p>SpringBoot</p></div>
+                                                            <div class="badge bg-success"><p>Java</p></div>
+                                                            <div class="badge bg-danger"><p>PostMan</p></div>
+                                                            <div class="badge bg-warning"><p>MongoDB</p></div>
+                                                            <div class="badge bg-primary"><p>Maven</p></div>
+                                                            <div class="badge bg-secondary"><p>GitLab</p></div>
+                                                            <div class="badge bg-success"><p>Heroku</p></div>                                                           
                     </li>
                     <li>
-                        <h5>Effisoft - Software engineer</h5>
+                        <img src="../static/images/effisoft.png" alt="Effisoft" class="company-img-band">
+                        <h5>Software engineer</h5>
                         <small>Jan. 2014 - Feb. 2019 - Paris</small>
+                        <br/>
                         <p>Effisoft delivers software solutions to the Insurance, Reinsurance and Risk Management
                             industries worldwide.
-                            <br>As member of the front-end team of the software Webxl, I was in charge of developing new
+                            <br/>As member of the front-end team of the software Webxl, I was in charge of developing new
                             functionalities, fixing defects and deploying builds in internal environment.</p>
-                    </li>
-                    <li>
-                        <h5>April International - E-commerce developer</h5>
-                        <small>April. 2012 - Dec. 2013 - Paris</small>
-                        <p>April International is an e-commerce insurance broker.
-                            <br> I implemented new insurance products subscription for the e-commerce international
-                            website providing dynamic pricing and supplying the insurance administration software.</p>
-                    </li>
-                    <li>
-                        <h5>Sungard - Software developer</h5>
-                        <small>Jan. 2011 - May. 2012 - Paris</small>
-                        <p>Sungard is a IT consulting company. I worked for BNP and Banque Populaire.
-                            <br> BNP: I implemented from scratch a software to manage loans, applying CMMI and quality
-                            standards.
-                            <br> Banque Populaire: Product owner and integration testing engineer Redesign of web site
-                            of Banque Populaire, applying SharePoint 2010 and C# specific development.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>M.A.C.S.F - Java developer</h5>
-                        <small>Aug. 2007 - Jan. 2011 - Paris</small>
-                        <p>MACSF is a health insurance.
-                            <br> Development of internal software for accounting, loss and savings in the context of
-                            technology shift from Cobol to JSP interfaces.
-                            <br> Development of the client’s subscription web site using .NET.
-                        </p>
-                    </li>
-                    <li>
-                        <h5>Aubay - Junior developer</h5>
-                        <small>Oct. 2005 - Jun. 2008 - Paris</small>
-                        <p>Aubay is a IT consulting company.
-                            <br> I worked on differents development missions ( J2EE - C# - PHP - C++) for clients :
-                            Orange, France Telecom, Accor, Veolia.
-                        </p>
-                    </li>
-                </ol>
-            </section>
-        </div>
-
-        <div class="container container-experience" id=working>
-            <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/wibas.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
-                        <h5>Lead software engineer</h5>
-                       <h4>wibas io - Hamburg</h4>
-                       
-                       <p class="date-experience">Feb. 2019 - actual position</p>
-                       <ul>
-                           <li>Wibas IO is a it company located in Hamburg.</li>
-                           <li>App engineer - Starting from scratch, free choice of the architecture and technology.</li>
-                           <h6>Tasks and achievements:</h6>
-                               <li>Construction of the CI/ CD chain using Gitlab and Heroku.</li>
-                               <li>Implementation of the back office website using Angular and of the backend using Java/Springboot.</li>
-                               <li> Implementation of the API to communicate with tax office (Elster).</li>
-                               <li>Implementation of unit tests using SpringBootTest and of integration tests using Postman.</li>
-                        </ul>
-                               <div class="badge bg-primary"><p>Angular 7</p></div>
-                               <div class="badge bg-secondary"><p>SpringBoot</p></div>
-                               <div class="badge bg-success"><p>Java</p></div>
-                               <div class="badge bg-danger"><p>PostMan</p></div>
-                               <div class="badge bg-warning"><p>MongoDB</p></div>
-                               <div class="badge bg-primary"><p>Maven</p></div>
-                               <div class="badge bg-secondary"><p>GitLab</p></div>
-                               <div class="badge bg-success"><p>Heroku</p></div>
-                   </div>
-           </section>
-
-           <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/effisoft.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
-                       <h5>Software engineer</h5>
-                       <h4>Effisoft - Paris</h4>
-                       <p class="date-experience">Jan. 2014 - Feb. 2019</p>
-                       <ul>
-                           <li>Effisoft delivers software solutions to the Insurance, Reinsurance and Risk Management industries worldwide. Their products are designed for all insurance professionals comprising from risk managers to reinsurers, insurance companies and brokerage firms.
-                           </li>
-                           <li>As member of the front-end team in my role of senior developer of the main software Webxl, I am in charge of developing new functionalities, fixing defects and deploying builds in internal environment.</li>
-                           <h6>Tasks and achievements:</h6>
-                           <li>Application maintenance of the software Webxl - front and back end using the technologies Silverlight, Java, Hibernate</li>
-                           <li>SCRUM (Agile) team work according to customer requirements – conduction of meetings with product owner – cost estimate – sprint evaluation – development – testing – delivery</li>
-                           <li>Delivery process with framework Maven, Jenkins</li>
-                           <li>Fixes of defects / Test scenario redaction</li>
-                           
-                       </ul>
+                            <br/>
+                            <h6>Tasks and achievements:</h6>
+                           <br/>Application maintenance of the software Webxl - front and back end using the technologies Silverlight, Java, Hibernate
+                           <br/>SCRUM (Agile) team work according to customer requirements – conduction of meetings with product owner – cost estimate – sprint evaluation – development – testing – delivery
+                           <br/>Delivery process with framework Maven, Jenkins
+                           <br/>Fixes of defects / Test scenario redaction
+                           <br/>
                            <div class="badge bg-primary"><p>Java</p></div>
                            <div class="badge bg-secondary"><p>C#</p></div>
                            <div class="badge bg-success"><p>PL-SQL</p></div>
                            <div class="badge bg-danger"><p>Vue.js</p></div>
                            <div class="badge bg-warning"><p>Hibernate</p></div>
-                   </div>
-           </section>
-
-           <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/april.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
-                       <h5>E-commerce developer</h5>
-                       <h4>April International - Paris</h4>
-                       <p class="date-experience">April. 2012 - Dec. 2013</p>
-                       <ul>
-                           <li>April International is an e-commerce insurance broker.</li>
-                           <li>Senior full stack software engineer in the IT department</li>
-                           <li>Development and implementation of new insurance products subscription for the e-commerce international website providing dynamic pricing and connecting with the insurance software.</li>
-                           <h6>Tasks and achievements:</h6>
-                               <li>Application maintenance of existing subscription system and development of new subscription website, resulting in a 20% increase of sales revenues on the web channel.</li>
-                               <li>Sustainable reform of quote and certificate generation in multiple languages.</li>
-                               <li>Efficient fix of production defects according to the contractual provisions of short-time customer requests, providing reliable on-time-delivery.</li>
-                               
-                       </ul>
-                           <div class="badge bg-primary"><p>Java</p></div>
-                           <div class="badge bg-secondary"><p>Struts</p></div>
-                           <div class="badge bg-success"><p>EJB 3.0</p></div>
-                           <div class="badge bg-danger"><p>Hibernate</p></div>
-                   </div>
-           </section>
-
-           <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/sungard.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
+                    </li>
+                    <li>
+                        <img src="../static/images/april.png" alt="April international" class="company-img">
+                        <h5>E-commerce developer</h5>
+                        <small>April. 2012 - Dec. 2013 - Paris</small>
+                        <p>April International is an e-commerce insurance broker.
+                            <br/> I implemented new insurance products subscription for the e-commerce international
+                            website providing dynamic pricing and supplying the insurance administration software.</p>
+                                <h6>Tasks and achievements:</h6>
+                                    <br/>Application maintenance of existing subscription system and development of new subscription website, resulting in a 20% increase of sales revenues on the web channel.
+                                    <br/>Sustainable reform of quote and certificate generation in multiple languages.
+                                    <br/>Efficient fix of production defects according to the contractual provisions of short-time customer requests, providing reliable on-time-delivery.
+                                    <br/>
+                                <div class="badge bg-primary"><p>Java</p></div>
+                                <div class="badge bg-secondary"><p>Struts</p></div>
+                                <div class="badge bg-success"><p>EJB 3.0</p></div>
+                                <div class="badge bg-danger"><p>Hibernate</p></div>
+                    </li>
+                    <li>
+                        <img src="../static/images/sungard.png" alt="Fis" class="company-img">
                         <h5>Software developer</h5>
-                       <h4>Sungard - Paris</h4>
-                       
-                       <p class="date-experience">Jan. 2011 - May. 2012</p>
-                       
-                               <h6>Mission for BNP :</h6>
-                           <br/>
-                           <ul>
-                            <li>
-                               Senior full stack software engineer in the structured finance department
-                               Development of web-based software which serves to manage loans. The team consisted of three developers, one database architect and one project manager. The team applied CMMI and the quality standards of BNP CIB.</li>
-                               <h6>Tasks and achievements:</h6>
-                               <li> Development of responsive pages and of high-volume withstanding back-end, applying design patterns, defensive and interface programming, increasing the competence of the team with respect to various technologies and resulting in the integration of quality standards at the development level.</li>
-                               <li> The reliable on-time-delivery within short deadlines allowed the customer to shift Excel files to a powerful and secure web application.</li>
-                       </ul>
+                        <small>Jan. 2011 - May. 2012 - Paris</small>
+                        <p>Sungard is a IT consulting company. I worked for BNP and Banque Populaire.
+                            <br/>
+                            <br/> Mission for BNP: I implemented from scratch a software to manage loans, applying CMMI and quality
+                            standards.The team consisted of three developers, one database architect and one project manager. The team applied CMMI and the quality standards of BNP CIB.
+
+                            <h6>Tasks and achievements:</h6>
+                               <br/> Development of responsive pages and of high-volume withstanding back-end, applying design patterns, defensive and interface programming, increasing the competence of the team with respect to various technologies and resulting in the integration of quality standards at the development level.
+                               <br/> The reliable on-time-delivery within short deadlines allowed the customer to shift Excel files to a powerful and secure web application.
+                               <br/>
                                <div class="badge bg-primary"><p>Java</p></div>
                                <div class="badge bg-secondary"><p>Javascript</p></div>
                                <div class="badge bg-success"><p>Struts</p></div>
@@ -260,92 +167,80 @@
                                <div class="badge bg-primary"><p>CSS</p></div>
                                <div class="badge bg-secondary"><p>XHTML</p></div>
                                <br/><br/>
-                               <h6> Mission for Banque Populaire:</h6>
-                               <br/>
-                         <ul>         
-                               <li> Product owner and integration testing engineer</li>
-                               <li>Redesign of web site of Banque Populaire, applying SharePoint 2010 and C# specific development. The team in charge of the project applied SCRUM.</li>
+                            <br/> Mission for Banque Populaire: Product owner and integration testing engineer Redesign of web site
+                            of Banque Populaire, applying SharePoint 2010 and C# specific development.
+                               <br/>Redesign of web site of Banque Populaire, applying SharePoint 2010 and C# specific development. The team in charge of the project applied SCRUM.
                                <h6>Tasks and achievements:</h6>
-                               <li> Preparation and conduction of meetings with managing directors in Nantes elaborating on client’s needs and defining potential strategies with regard to the envisaged redesign of the website of Banque Populaire.</li>
-                               <li> Drafting of user story and technical documentation successfully implemented by the developers.</li>
-                               <li> Acquisition of SCRUM methodology, which significantly improved the visibility of the respective status of the project.</li>
-                               <li>Continuous integration resulted in reduced defects.</li>
-                       </ul>
+                               <br/> Preparation and conduction of meetings with managing directors in Nantes elaborating on client’s needs and defining potential strategies with regard to the envisaged redesign of the website of Banque Populaire.
+                               <br/> Drafting of user story and technical documentation successfully implemented by the developers.
+                               <br/> Acquisition of SCRUM methodology, which significantly improved the visibility of the respective status of the project.
+                               <br/>Continuous integration resulted in reduced defects.
+                               <br/>
                                <div class="badge bg-primary"><p>C#</p></div>
                                <div class="badge bg-secondary"><p>Sharepoint</p></div>
                                <div class="badge bg-success"><p>Hudson</p></div>
-                   </div>
-           </section>
-
-           <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/macsf.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../static/images/macsf.png" alt="" class="company-img">
                         <h5>Java developer</h5>
-                       <h4>M.A.C.S.F - Paris</h4>
-                       
-                       <p class="date-experience">Aug. 2007 - Jan. 2011</p>
-                       <ul>
-                           <li>MACSF is a health insurance.</li>
-                       <li>Development of internal software for accounting, loss and savings in the context of technology shift from Cobol to JSP interfaces. Development of the client’s subscription web site using .NET.</li>
-                       <h6>Tasks and achievements:</h6>
-                       <li>Development of new software interfaces which highly improved the user experience and performance.</li>
-                       <li>Development of generation tools, drafting of documentation and providing java training to Cobol developers, resulting in a sustainable integration of the technology change.</li>
-                       <li>Development of the life insurance web site and health care web site Libéa using .NET, resulting in an innovative and efficient channel of subscription on the web.</li>
-                               
-                       </ul>
-                       <div class="badge bg-primary"><p>Java</p></div>
+                        <small>Aug. 2007 - Jan. 2011 - Paris</small>
+                        <p>MACSF is a health insurance.
+                            <br/> Development of internal software for accounting, loss and savings in the context of
+                            technology shift from Cobol to JSP interfaces.
+                            <br/> Development of the client’s subscription web site using .NET.
+                            <h6>Tasks and achievements:</h6>
+                       <br/>Development of new software interfaces which highly improved the user experience and performance.
+                       <br/>Development of generation tools, drafting of documentation and providing java training to Cobol developers, resulting in a sustainable integration of the technology change.
+                       <br/>Development of the life insurance web site and health care web site Libéa using .NET, resulting in an innovative and efficient channel of subscription on the web.
+                       <br/>
+                               <div class="badge bg-primary"><p>Java</p></div>
                                <div class="badge bg-secondary"><p>C#</p></div>
                                <div class="badge bg-success"><p>Struts</p></div>
                                <div class="badge bg-danger"><p>Cobol</p></div>
-                   </div>
-           </section>
-
-           <section class="company">
-                   <div class="infos">
-                       <a href="#" target="_blank">
-                           <img src="../static/images/aubay.png" alt="">
-                       </a>
-                   </div>
-
-                   <div class="description-company">
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../static/images/aubay.png" alt="" class="company-img">
                         <h5>Junior developer</h5>
-                       <h4>Aubay - Paris</h4>
-                       
-                       <p class="date-experience">Oct. 2005 - Jun. 2008</p>
-                       <ul>
-                           <li>Aubay is a it consulting company.</li>
-                       <li>I worked on differents development missions for clients : Orange, France Telecom, Accor, Veolia.</li>
-                       
-                       </ul>
-                       <div class="badge bg-primary"><p>Java</p></div>
+                        <small>Oct. 2005 - Jun. 2008 - Paris</small>
+                        <p>Aubay is a IT consulting company.
+                            <br/> I worked on differents development missions ( J2EE - C# - PHP - C++) for clients :Orange, France Telecom, Accor, Veolia.
+                            <br/>
+                            <div class="badge bg-primary"><p>Java</p></div>
                                <div class="badge bg-secondary"><p>C#</p></div>
                                <div class="badge bg-success"><p>PHP</p></div>
                                <div class="badge bg-danger"><p>C++</p></div>
-                   </div>
-           </section>
-       </div>
-       <div class="container container-home">
-
+                        </p>
+                    </li>
+                </ol>
+            </section>
              <!-- Testimonials-->	
              <section class="testimonial section-home" id="reference">
                     <div class="row">
                         <div class="grid-2">
                             <img src="../static/images/ref1.jpg">
-                            <h2>Anna Léa Lesage</h2>
-                            <p>I've worked together with Joseph on a small project.
+                            <br/>
+                            <h3>Anna Léa Lesage</h3>                            
+                            <p>
+                                <br/>I've worked together with Joseph on a small project.
                                 He onboarded me very well on this project which mixed many different technologies (google cloud, firebase and Angular cli).
                                 He explained the interconnections very well showing a high understanding of the technologies used.</p>
                         </div>
                         <div class="grid-2">
                                 <img src="../static/images/avatar.png">
-                                <h2>Timothe Coger</h2>
-                                <p>Joseph is a qualified and talentuous person to solve issues and rebuild technical architectures. It was a real pleasure to work with him.</p>
+                                <br/>
+                                <h3>Timothe Coger</h3>
+                                <p><br/>Joseph is a qualified and talentuous person to solve issues and rebuild technical architectures. It was a real pleasure to work with him.</p>
                             </div>
+                            <div class="grid-2">
+                                    <img src="../static/images/ref2.jpg">
+                                    <br/>
+                                    <h3>Cristiano Diniz Pinto</h3>                                   
+                                    <p><br/>Joseph is a high-level java backend developer; I had the opportunities to receive advice from him in a java backend application, and he guided me through the best practices for implementing test unit and java architecture. He is always looking for improvements and searching for opportunities to share his knowledge with others.
+                                        <br/>Joseph is also transparent and trustable; that makes him a good match for work together.</p>
+                                </div>
+                            
                     </div>
                 </section>
         <section class="section-home no-padd-bottom" id="techstack">

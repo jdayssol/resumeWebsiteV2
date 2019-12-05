@@ -1810,11 +1810,11 @@ img {
   float: left;
 }
 
-/*============================================================= Badges =============================================================*/
+/*=============================================================  =============================================================*/
 .badge {
   float: left;
   padding: 5px 10px;
-  color: #ffffff;
+  color: #000;
   -webkit-border-radius: 25px;
   border-radius: 25px;
 }
@@ -1828,7 +1828,7 @@ img {
   color: #618C32;
 }
 .badge.bg-danger {
-  color: #A3201E;
+  color: #4B0F0E;
 }
 .badge.bg-warning {
   color: #9C3E23;
@@ -4348,7 +4348,7 @@ table.table-bordered tr td {
   position: relative;
   margin: 0;
   padding-bottom: 100px;
-  padding-left: 20px;
+  padding-left: 30px;
   height: auto;
 }
 .timeline li:before {
@@ -4374,9 +4374,6 @@ table.table-bordered tr td {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 4px 0 #A7BED3;
   box-shadow: 0 2px 4px 0 #A7BED3;
-}
-.timeline li:last-child {
-  padding-bottom: 50px;
 }
 
 /*============================================================= Video container =============================================================*/
@@ -5794,6 +5791,24 @@ hr {
   float: left;
 }
 
+.company-img-band {
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  max-height: 200px;
+  height: inherit;
+  display: block;
+}
+
+.company-img {
+  width: 100px;
+  max-width: 150px;
+  height: 100px;
+  max-height: 150px;
+  height: inherit;
+  display: block;
+}
+
 .cv {
   width: 200px;
   height: inherit;
@@ -5814,6 +5829,10 @@ hr {
   padding: 0 1%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.badge p {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 40em) {
@@ -5843,8 +5862,10 @@ hr {
 }
 /* Testimonials */
 .testimonial {
+  padding: 65px 5%;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
-  margin-bottom: 30px;
 }
 .testimonial img {
   width: inherit;
