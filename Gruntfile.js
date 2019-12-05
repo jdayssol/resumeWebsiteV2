@@ -11,7 +11,7 @@ module.exports = function (grunt) {
           cwd: 'scss',
           src: ['**/*.scss'],
           src: ['**/**/*.scss'],
-          dest: 'css',
+          dest: 'static/css',
           ext: '.css'
       }]
       }
@@ -21,8 +21,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'css',
-          src: ['*.css', '!*.min.css'],
-          dest: 'css',
+          src: ['static/*.css', '!*.min.css'],
+          dest: 'static/css',
           ext: '.min.css'
     }]
       }
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     uglify: { // Begin JS Uglify Plugin
       build: {
         src: ['src/*.js'],
-        dest: 'js/script.min.js'
+        dest: 'static/js/script.min.js'
       }
     },
     watch: { // Compile everything into one task with Watch Plugin
