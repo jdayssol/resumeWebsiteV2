@@ -26,7 +26,7 @@ module.exports = function (grunt) {
       css: {
         files: '**/*.scss',
         files: '**/**/*.scss',
-        tasks: ['sass', 'cssmin']
+        tasks: ['sass']
       },
       js: {
         files: '**/*.js',
@@ -36,7 +36,6 @@ module.exports = function (grunt) {
   });
   // Load Grunt plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
