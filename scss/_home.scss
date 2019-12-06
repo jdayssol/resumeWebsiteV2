@@ -20,6 +20,16 @@
         object-fit: cover;
     }
 
+    .img-cover {
+        width: 100%;
+        float: left;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
     .title {
         position: relative;
         z-index: 5;
