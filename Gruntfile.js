@@ -18,13 +18,8 @@ module.exports = function (grunt) {
     },
     cssmin: { // Begin CSS Minify Plugin
       target: {
-        files: [{
-          expand: true,
-          cwd: 'css',
           src: ['static/css/*.css', '!*.min.css'],
-          dest: 'static/css/',
-          ext: '.min.css'
-    }]
+          dest: 'static/css/style.min.css',
       }
     },
     uglify: { // Begin JS Uglify Plugin

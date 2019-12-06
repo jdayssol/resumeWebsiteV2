@@ -20,16 +20,16 @@ p, .timeline li h5,
 .cards p, .badge p, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, html,
-body, header nav ul, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
+body, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
   padding: 0;
   margin: 0;
 }
 
-header nav ul, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
+.tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
   list-style: none;
 }
 
-header nav .logo, .pagination-container .pagination li a, .modal .modal-container, .checkbox-container .checkbox-label:after, .checkbox-container .checkbox-label, .radio-container .radio-label, .wrapper-section-parallax-multi, .wrapper-section-parallax, .btn-round, .avatar.avatar-empty:before, .avatar.avatar-empty {
+header .logo-jd, .pagination-container .pagination li a, .modal .modal-container, .checkbox-container .checkbox-label:after, .checkbox-container .checkbox-label, .radio-container .radio-label, .wrapper-section-parallax-multi, .wrapper-section-parallax, .btn-round, .avatar.avatar-empty:before, .avatar.avatar-empty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ small, em {
   font-style: italic;
 }
 
-header nav .logo, footer, .error, .btn, a,
+header .logo-jd, footer, .error, .btn, a,
 .breadcrumbs-links a, strong, h5, h3 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
@@ -3681,7 +3681,7 @@ textarea {
     padding: 0;
   }
   .navbar nav .hamburger {
-    display: inherit;
+    display: inherit !important;
   }
   .navbar nav input:checked ~ .ul-nav {
     max-height: 300px;
@@ -3697,7 +3697,6 @@ textarea {
   z-index: 1001;
   padding-top: 5px;
   cursor: pointer;
-  display: none;
   align-self: flex-end;
   width: 30px;
   height: 22px;
@@ -3761,6 +3760,7 @@ textarea {
   right: 5%;
   top: 50px;
   z-index: 2001;
+  cursor: pointer;
 }
 .header-full .hamburger span {
   background: #A7BED3;
@@ -5623,7 +5623,7 @@ h3,
 h4,
 h5,
 h6,
-p, header nav ul, html,
+p, html,
 body, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, .badge p, .breadcrumbs, .dropdown .dropdown-content, .cards h4,
@@ -5635,11 +5635,11 @@ body, .accordion .open-accordion,
   margin: 0;
 }
 
-header nav ul, .breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks {
+.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks {
   list-style: none;
 }
 
-header nav .logo, .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a {
+header .logo-jd, .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5680,7 +5680,7 @@ em, small {
   font-style: italic;
 }
 
-header nav .logo, h3, h5, strong, a,
+header .logo-jd, h3, h5, strong, a,
 .breadcrumbs-links a, .btn, .error, footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -5782,12 +5782,12 @@ hr {
   margin-bottom: 10px;
 }
 .container .section-education .infos {
-  width: 150px;
+  width: 8rem;
   float: left;
   margin-right: 50px;
 }
 .container .section-education .description-education {
-  width: calc(100% - 50px - 150px) !important;
+  width: calc(100% - 50px - 8rem) !important;
   float: left;
 }
 
@@ -5814,7 +5814,7 @@ hr {
   height: inherit;
   border-radius: 49.9%;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: auto;
   display: block;
 }
 
@@ -5869,6 +5869,7 @@ hr {
 }
 .testimonial img {
   width: inherit;
+  max-width: 50%;
   height: inherit;
   border-radius: 49.9%;
   margin-left: auto;
@@ -5880,6 +5881,10 @@ hr {
   font-style: italic;
   color: #888;
   margin-top: -15px;
+}
+
+.function-name-under {
+  display: none;
 }
 
 /*============================================================ Navigation ============================================================*/
@@ -5903,57 +5908,12 @@ header {
   z-index: 999;
   background-color: #A7BED3;
 }
-header nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
-header nav .logo {
-  color: #ffffff;
+header .logo-jd {
+  color: #ffffff !important;
   background-color: #A7BED3;
   width: 35px;
   height: 35px;
   text-decoration: none;
-}
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: flex-end;
-  -ms-flex-pack: flex-end;
-  justify-content: flex-end;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  font-size: 18px;
-}
-header nav ul li {
-  margin-right: 20px;
-  color: #ffffff;
-}
-header nav ul li:last-child {
-  margin-right: 0;
-}
-header nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-header nav ul li a:visited {
-  color: #ffffff;
-}
-header nav ul li a:hover {
-  color: #F1FFC4;
 }
 
 /*============================================================ Footer ============================================================*/
@@ -5985,6 +5945,8 @@ header nav ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .cover .title {
   position: relative;

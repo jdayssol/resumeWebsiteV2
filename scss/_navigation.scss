@@ -1,5 +1,4 @@
 /*============================================================ Navigation ============================================================*/
-
 header {
     @include flexbox(center, flex-start, nowrap);
     width: 100%;
@@ -9,48 +8,50 @@ header {
     padding: 10px 5%;
     z-index: 999;
     background-color: $primary;
+
+    .logo-jd {
+        color: $white !important;
+        background-color: $primary;
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+        @extend %flexCenter;
+        @extend %body-bold;
+    }
     
-    nav {
-        width: 100%;
-        @include flexbox(center, space-between, nowrap);
+    // nav {
+    //     width: 100%;
+    //     @include flexbox(center, space-between, nowrap);
 
-        .logo {
-            color: $white;
-            background-color: $primary;
-            width: 35px;
-            height: 35px;
-            text-decoration: none;
-            @extend %flexCenter;
-            @extend %body-bold;
-        }
+        
 
-        ul {
-            @extend %ulNone;
-            @include flexbox(center, flex-end, nowrap);
-            font-size: 18px;
+    //     ul {
+    //         @extend %ulNone;
+    //         @include flexbox(center, flex-end, nowrap);
+    //         font-size: 18px;
 
-            li {
-                margin-right: 20px;
-                color: $white;
-                &:last-child {
-                    margin-right: 0;
-                }
+    //         li {
+    //             margin-right: 20px;
+    //             color: $white;
+    //             &:last-child {
+    //                 margin-right: 0;
+    //             }
 
-                a {
-                    color: $white;
-                    text-decoration: none;
+    //             a {
+    //                 color: $white;
+    //                 text-decoration: none;
 
                     
 
-                    &:visited {
-                        color: $white;
-                    }
+    //                 &:visited {
+    //                     color: $white;
+    //                 }
 
-                    &:hover {
-                        color: $secondary;
-                    }
-                }
-            }
-        }
-    }
+    //                 &:hover {
+    //                     color: $secondary;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }

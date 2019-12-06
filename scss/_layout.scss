@@ -23,7 +23,7 @@
       margin-bottom: 10px;
 
       $margin-right: 50px;
-      $width-infos: 150px;
+      $width-infos: 8rem;
 
       .infos {
         width: $width-infos;
@@ -61,7 +61,7 @@
         height: inherit;
         border-radius: 49.9%;
         margin-left: auto;
-        margin-right: 10px;
+        margin-right: auto;
         display: block;
 }
 
@@ -95,7 +95,7 @@
 
 /* Testimonials */
 .testimonial {
-    padding: $nav-height+10px 5%;
+    padding: $nav-height+10px 5%;  
     margin: {
         top: 0;
         bottom: 0;
@@ -105,6 +105,7 @@
 
     img {
         width: inherit;
+        max-width: 50%;      
         height: inherit;
         border-radius: 49.9%;
         margin-left: auto;
@@ -117,4 +118,8 @@
         color: #888;
         margin-top:  -15px;
       }
+  }
+
+  .function-name-under {
+    display: none; 
   }

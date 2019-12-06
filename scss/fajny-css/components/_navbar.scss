@@ -12,6 +12,10 @@
 	@include shadow-bottom($primary);
 	z-index: 999;
 
+	.hamburger {
+		//display: none !important;
+	}
+
 	nav {
 		-webkit-box-flex: 1;
 		-ms-flex-positive: 1;
@@ -31,6 +35,8 @@
 				width: 100px;
 			}
 		}
+
+		
 
 		.ul-nav {
 			width: 100%;
@@ -130,7 +136,7 @@
 			}
 
 			.hamburger {
-				display: inherit;
+				display: inherit !important;
 			}
 
 			input:checked ~ .ul-nav {
@@ -150,7 +156,7 @@
 	z-index: 1001;
 	padding-top: 5px;
 	cursor: pointer;
-	display: none;
+	//display: none;
 	align-self: flex-end;
 	width: 30px;
 	height: 22px;
@@ -213,6 +219,7 @@
 		right: 5%;
 		top: 50px;
 		z-index: 2001;
+		cursor: pointer;
 
 		span {
 			background: $primary;
