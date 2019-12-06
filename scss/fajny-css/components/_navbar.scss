@@ -103,7 +103,7 @@
 				opacity: 0;
 
 				.btn-dropdown {
-					display: none;
+					display: block;
 				}
 
 				li {
@@ -116,6 +116,7 @@
 						width: 100%;
 						box-shadow: none;
 						position: relative;
+						padding: 10px 10px;
 						top: 0;
 
 						li {
@@ -134,7 +135,7 @@
 			}
 
 			input:checked ~ .ul-nav {
-				max-height: 300px;
+				max-height: 100vh;
 				overflow-y: scroll;
 				padding: 50px 5%;
 				opacity: 100;
