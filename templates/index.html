@@ -16,71 +16,18 @@
 
 
     </head>
-
+    
     <body>
-            <!--<header class="navbar">
-                    <div><a href="#presentation" class="logo">JD</a></div>
-                            <input type="checkbox" name="burger" id="burger" class="input-burger">
-                            <label for="burger" class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </label>
-                    <nav>
-                        <ul class="ul-nav">
-                            <li><a href="#timeline">Experience</a></li>        
-                            <li class="dropdown">
-                                    <a href="#reference" class="btn-dropdown">Reference</a>
-                                    <ul class="dropdown-content">
-                                        <li><a href="#">Wibas</a></li>
-                                        <li><a href="#">Effisoft</a></li>
-                                        <li><a href="#">April</a></li>
-                                        <li><a href="#">Sungard</a></li>
-                                        <li><a href="#">M.A.C.S.F</a></li>
-                                        <li><a href="#">Aubay</a></li>
-                                    </ul>
-                                </li>
-                            <li><a href="#techstack">Tech Stack</a></li>
-                        </ul>
-                    </nav>
-                    </header>-->
-
-                    <header class="navbar">
-                            <nav>
-                                    <div class="logo"><a href="#presentation" class="logo-jd">JD</a></div>
-                                    <input type="checkbox" name="burger" id="burger" class="input-burger">
-                                    <label for="burger" class="hamburger">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </label>
-                        
-                                    <ul class="ul-nav">
-                                        <li><a href="#timeline">Experience</a></li>    
-                                        <li><a href="#techstack">Tech Stack</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="btn-dropdown">Reference</a>
-                                            <ul class="dropdown-content">
-                                                <li><a href="#wibas">Wibas</a></li>
-                                                <li><a href="#effisoft">Effisoft</a></li>
-                                                <li><a href="#april">April</a></li>
-                                                <li><a href="#sungard">Sungard</a></li>
-                                                <li><a href="#macsf>M.A.C.S.F</a></li>
-                                                <li><a href="#aubay">Aubay</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                            </nav>
-                        </header>
+                    <header w3-include-html="../static/includes/header.html" ></header>
                     
 
         <div class="cover" id="cover">
-            <!-- <video autoplay muted loop>
-                <source src="../static/images/video-background2.mp4" type="video/mp4" />
+             <video autoplay muted loop id="backgroundvideo">
+                <source src="" type="video/mp4" id="backgroundvideosource"/>
                 Your browser does not support HTML5 video.
-            </video> -->
+            </video>
 
-            <div class="img-cover" style="background: url(/static/images/background.jpg);"></div>
+            <div class="img-cover" id="backgroundcover"></div>
 
             <div class="title">
                 <h1>Joseph Dayssol</h1>
@@ -108,12 +55,22 @@
                     </div>
             </section>
 
-            <section class="section-home bg-primary">
+            <section class="section-home">
                 <h2>Engineering With Style.</h2>
                 <p>15 years of experience in software and web development using object oriented languages for IT
                     companies, insurances and banks. 
-                    <br/> Fluent in English and German.</p>
+                    </p>
+                    <div style="width: 50%;">
                     <br/>
+                    French <div class="progress progress-primary progress-100 progress-anim-100"></div>
+                    <br/>
+                    <br/>
+                    English <div class="progress progress-success progress-75 progress-anim-75"></div>  
+                    <br/>
+                    <br/>
+                    German<div class="progress progress-warning progress-50 progress-anim-50"></div>
+                    <br/>
+                    </div>
                 <h2>Recognised for:</h2>
                 <p>
                     <ul>
@@ -223,8 +180,10 @@
                                <div class="badge bg-primary"><p>CSS</p></div>
                                <div class="badge bg-secondary"><p>XHTML</p></div>
                                <br/><br/>
-                            <br/> Mission for Banque Populaire: Product owner and integration testing engineer Redesign of web site
-                            of Banque Populaire, applying SharePoint 2010 and C# specific development.
+                               <p>
+                                <br/> Mission for Banque Populaire: Product owner and integration testing engineer Redesign of web site
+                                of Banque Populaire, applying SharePoint 2010 and C# specific development.
+                                </p>
                                <br/>Redesign of web site of Banque Populaire, applying SharePoint 2010 and C# specific development. The team in charge of the project applied SCRUM.
                                <h6>Tasks and achievements:</h6>
                                <br/> Preparation and conduction of meetings with managing directors in Nantes elaborating on client’s needs and defining potential strategies with regard to the envisaged redesign of the website of Banque Populaire.
@@ -308,5 +267,6 @@
         <!-- JS -->
         <script src="../static/js/includes.js"></script>
         <script src="../static/js/script.min.js"></script>
+        <script src="../static/js/loadvideo.js"></script>
     </body>
 </html>
