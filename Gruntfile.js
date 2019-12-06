@@ -16,12 +16,6 @@ module.exports = function (grunt) {
       }]
       }
     },
-    cssmin: { // Begin CSS Minify Plugin
-      target: {
-          src: ['static/css/*.css', '!*.min.css'],
-          dest: 'static/css/style.min.css',
-      }
-    },
     uglify: { // Begin JS Uglify Plugin
       build: {
         src: ['src/*.js'],
