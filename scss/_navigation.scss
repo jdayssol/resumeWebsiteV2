@@ -18,40 +18,4 @@ header {
         @extend %flexCenter;
         @extend %body-bold;
     }
-    
-    // nav {
-    //     width: 100%;
-    //     @include flexbox(center, space-between, nowrap);
-
-        
-
-    //     ul {
-    //         @extend %ulNone;
-    //         @include flexbox(center, flex-end, nowrap);
-    //         font-size: 18px;
-
-    //         li {
-    //             margin-right: 20px;
-    //             color: $white;
-    //             &:last-child {
-    //                 margin-right: 0;
-    //             }
-
-    //             a {
-    //                 color: $white;
-    //                 text-decoration: none;
-
-                    
-
-    //                 &:visited {
-    //                     color: $white;
-    //                 }
-
-    //                 &:hover {
-    //                     color: $secondary;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }

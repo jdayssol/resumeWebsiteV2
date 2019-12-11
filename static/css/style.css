@@ -20,16 +20,16 @@ p, .timeline li h5,
 .cards p, .badge p, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, html,
-body, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
+body, .myfooter ul, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
   padding: 0;
   margin: 0;
 }
 
-.tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
+.myfooter ul, .tabs .tablinks, .pagination-container .pagination, .header-full nav .ul-nav, .navbar nav .ul-nav, footer .footer-container ul, .dropdown .dropdown-content, .breadcrumbs {
   list-style: none;
 }
 
-header .logo-jd, .pagination-container .pagination li a, .modal .modal-container, .checkbox-container .checkbox-label:after, .checkbox-container .checkbox-label, .radio-container .radio-label, .wrapper-section-parallax-multi, .wrapper-section-parallax, .btn-round, .avatar.avatar-empty:before, .avatar.avatar-empty {
+.myfooter .logo-jd, header .logo-jd, .pagination-container .pagination li a, .modal .modal-container, .checkbox-container .checkbox-label:after, .checkbox-container .checkbox-label, .radio-container .radio-label, .wrapper-section-parallax-multi, .wrapper-section-parallax, .btn-round, .avatar.avatar-empty:before, .avatar.avatar-empty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ small, em {
   font-style: italic;
 }
 
-header .logo-jd, footer, .error, .btn, a,
+.myfooter .logo-jd, header .logo-jd, footer, .error, .btn, a,
 .breadcrumbs-links a, strong, h5, h3 {
   font-family: "Muli", sans-serif;
   font-weight: 700;
@@ -4344,6 +4344,9 @@ table.table-bordered tr td {
   width: 100%;
   float: left;
   margin-bottom: 20px;
+  border-bottom: 3px solid #c6c6c6;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .timeline ol {
   padding-inline-start: 10px;
@@ -5627,7 +5630,7 @@ h3,
 h4,
 h5,
 h6,
-p, html,
+p, .myfooter ul, html,
 body, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, .badge p, .breadcrumbs, .dropdown .dropdown-content, .cards h4,
@@ -5639,11 +5642,11 @@ body, .accordion .open-accordion,
   margin: 0;
 }
 
-.breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks {
+.myfooter ul, .breadcrumbs, .dropdown .dropdown-content, footer .footer-container ul, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks {
   list-style: none;
 }
 
-header .logo-jd, .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a {
+.myfooter .logo-jd, header .logo-jd, .avatar.avatar-empty, .avatar.avatar-empty:before, .btn-round, .wrapper-section-parallax, .wrapper-section-parallax-multi, .radio-container .radio-label, .checkbox-container .checkbox-label, .checkbox-container .checkbox-label:after, .modal .modal-container, .pagination-container .pagination li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5684,7 +5687,7 @@ em, small {
   font-style: italic;
 }
 
-header .logo-jd, h3, h5, strong, a,
+.myfooter .logo-jd, header .logo-jd, h3, h5, strong, a,
 .breadcrumbs-links a, .btn, .error, footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -5774,14 +5777,15 @@ hr {
   position: relative;
 }
 .container .section-home {
-  padding: 65px 5%;
+  padding: 10px 5%;
   margin-top: 0;
   margin-bottom: 0;
 }
 .container .section-education {
-  width: 100%;
-  float: left;
-  border-bottom: 1px solid #c6c6c6;
+  padding: 10px 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 3px solid #c6c6c6;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -5866,10 +5870,13 @@ hr {
 }
 /* Testimonials */
 .testimonial {
-  padding: 65px 5%;
+  padding: 10px 5%;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  border-bottom: 2px solid #c6c6c6;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .testimonial img {
   width: inherit;
@@ -5917,6 +5924,72 @@ header .logo-jd {
 }
 
 /*============================================================ Footer ============================================================*/
+.myfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 2%;
+  z-index: 999;
+  background: #A7BED3;
+  -webkit-box-shadow: 0 -2px 4px 0 #A7BED3;
+  box-shadow: 0 -2px 4px 0 #A7BED3;
+  color: #ffffff !important;
+}
+.myfooter .logo-jd {
+  color: #ffffff !important;
+  background-color: #A7BED3;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+}
+.myfooter a {
+  color: #ffffff;
+}
+.myfooter a:hover {
+  color: #dddddd;
+}
+.myfooter ul {
+  width: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  float: left;
+  position: relative;
+}
+.myfooter ul a {
+  color: #ffffff;
+}
+.myfooter ul a:hover {
+  color: #dddddd;
+}
+.myfooter ul li {
+  margin-right: 20px;
+}
+.myfooter ul li:last-child {
+  margin-right: 0;
+}
+
 /*============================================================ Pages ============================================================*/
 /*============================================================ Homepage ============================================================*/
 .cover {

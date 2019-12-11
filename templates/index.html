@@ -18,9 +18,8 @@
     </head>
     
     <body>
-                    <header w3-include-html="../static/includes/header.html" ></header>
-                    
-
+        <header w3-include-html="../static/includes/header.html" ></header>
+        <main class="container no-padd-bottom">
         <div class="cover" id="cover">
              <video autoplay muted loop id="backgroundvideo">
                 <source src="" type="video/mp4" id="backgroundvideosource"/>
@@ -31,7 +30,11 @@
 
             <div class="title">
                 <h1>Joseph Dayssol</h1>
-                <h2>Senior Software Engineer</h2>
+                <h2>
+                <div class="type-wrap">
+                    <span id="typed3"></span><span class="typed-cursor">|</span>
+                  </div>
+                </h2>
             </div>
         </div>
 
@@ -39,7 +42,7 @@
             <section class="section-home" id="presentation">
                     <div class="row">
                             <div class="grid-4">
-                                    <h2>Experience. Precision. Excellence.</h2>
+                                    <h3>Experience. Precision. Excellence.</h3>
                                     <p>
                                             With bachelor and master degrees in Computer Systems, I have accumulated more than 15 years of
                                             development experience (Java, JavaScript, C# and their ecosystems). In 2010 he completed further
@@ -56,7 +59,7 @@
             </section>
 
             <section class="section-home">
-                <h2>Engineering With Style.</h2>
+                <h3>Engineering With Style.</h3>
                 <p>15 years of experience in software and web development using object oriented languages for IT
                     companies, insurances and banks. 
                     </p>
@@ -71,7 +74,9 @@
                     German<div class="progress progress-warning progress-50 progress-anim-50"></div>
                     <br/>
                     </div>
-                <h2>Recognised for:</h2>
+            </section>
+            <section class="section-home">
+                <h3>Recognised for:</h3>
                 <p>
                     <ul>
                         <li>Being adaptable and flexible.</li>
@@ -83,7 +88,7 @@
             </section>
 
             <section class="section-education">
-                    <h2>Education</h2>
+                    <h3>Education</h3>
                 <div class="description-education">
                     <p>University Paris-Sorbonne : MBA - Master of Enterprise Administration.</p>
                     <p>University Pasquale Paoli, Corsica : Master degree in computer science.</p>
@@ -95,7 +100,7 @@
                     </div>
             </section>
 
-            <section class="section-timeline section-home" id="timeline">
+            <section class="section-timeline" id="timeline">
                 <ol class="timeline .container-timeline">
                     <li>
                                                 <img src="../static/images/wibas.png" alt="Wibas" class="company-img-band" id="wibas">
@@ -263,10 +268,21 @@
                     href="https://embed.stackshare.io/stacks/embed/cccfde7ee45798dc4149eb6c3d1e91" /></a>
                 <script async src="../static/js/client-code.js" charset="utf-8"></script>
             </section>
+
+            
         </div>
+
+        <footer w3-include-html="../static/includes/footer.html" class="myfooter">
+            
+        </footer>
+       </main>
+
+        
         <!-- JS -->
         <script src="../static/js/includes.js"></script>
+        <script src="../static/js/typed.min.js"></script>
         <script src="../static/js/script.min.js"></script>
         <script src="../static/js/loadvideo.js"></script>
+        <script src="../static/js/header.js"></script>
     </body>
 </html>

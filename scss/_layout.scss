@@ -7,20 +7,26 @@
     background-color: $white;
     z-index: 10;
     position: relative;
+
+    
     
     .section-home {
-        padding: $nav-height+10px 5%;
+        padding: $nav-height 5%;
         margin: {
             top: 0;
             bottom: 0;
         }
+        
     }
     .section-education {
-      width: 100%;
-      float: left;
-      border-bottom: 1px solid $light-gray;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
+      padding: $nav-height 5%;
+        margin: {
+            top: 0;
+            bottom: 0;
+        }
+        border-bottom: 3px solid $light-gray;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
 
       $margin-right: 50px;
       $width-infos: 8rem;
@@ -95,13 +101,16 @@
 
 /* Testimonials */
 .testimonial {
-    padding: $nav-height+10px 5%;  
+    padding: $nav-height 5%;  
     margin: {
         top: 0;
         bottom: 0;
     }
     text-align: center;
 
+    border-bottom: 2px solid $light-gray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     img {
         width: inherit;

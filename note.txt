@@ -2,3 +2,17 @@ npm install -g sass
 
 npm install -g grunt-cli
 taper grunt pour démarrer le compilateur sass
+
+
+
+How to deploy your app on heroku:
+- Subscribe to Heroku
+- Download heroku CLI and install it. It will also install git
+- On a command, type : heroku login to login, heroku create to create a app
+- Create a requirement.txt file  , to list all the library that Heroku will need to run your app: pip3 freeze > requirements.txt : https://devcenter.heroku.com/articles/python-support#supported-runtimes
+- Create a Procfile file ( no extension). Inside it type : web: gunicorn resume:app . This will explain the web server which script to run. app should be the name of your flask app
+- Add the file of your project to git: git init / git add * / git commit -m "first commit".
+- To view the app on heroky type heroku apps
+- Link git to heroku : heroku git:remote --app yourapp
+- Then you are ready to push on heroku : git push heroku master
+- heroku info can give you information of which app you are connected - heroku logs will give you more details if a error happen

@@ -1,2 +1,58 @@
 /*============================================================ Footer ============================================================*/
 
+.myfooter {
+    @include flexbox(center, flex-start, nowrap);
+    width: 100%;
+    position: relative; 
+    top: 0;
+    left: 0;
+    padding: 10px 2%;
+    z-index: 999;
+    background: $primary;
+    @include shadow-top($primary);
+    color: $white !important;
+
+    .logo-jd {
+        color: $white !important;
+        background-color: $primary;
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+        @extend %flexCenter;
+        @extend %body-bold;
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $lighter-gray;
+        }
+    }
+
+    ul {
+        width: 100%;
+        float: left;
+        @extend %ulNone;
+        @include flexbox(center, flex-start, nowrap);
+        float: left;
+        position: relative;
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $lighter-gray;
+            }
+        }
+
+        li {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+        }
+    }
+}

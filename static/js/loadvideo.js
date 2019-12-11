@@ -6,12 +6,10 @@
    var video = document.querySelector('video#backgroundvideo');
 
    if (isMobile.apple.phone || isMobile.android.phone) {
-     alert('isMobile')
        backgroundcover.style.zIndex=1
        video.style.zIndex=-1
        backgroundcover.style.display="block"
    }else{ 
-    alert('isComputer')
     var source = document.querySelector('source#backgroundvideosource');  
     backgroundcover.style.zIndex=-1
     video.style.zIndex=1
@@ -19,3 +17,5 @@
     video.load(); 
    }
  })();
+
+ 
