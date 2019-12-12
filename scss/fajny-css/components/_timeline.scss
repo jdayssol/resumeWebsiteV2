@@ -5,8 +5,6 @@
 	width: 100%;
 	float: left;
 	margin-bottom: 20px;
-
-	border-bottom: 3px solid $light-gray;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 
@@ -21,7 +19,11 @@
 		padding-left: 30px;
 		height: auto;
 
-		
+		h5,
+		small,
+		p {
+			@extend %paMar;
+		}
 
 		&:before {
 			content: "";
@@ -31,20 +33,6 @@
 			top: 0;
 			left: 5px;
 			width: 3px;
-		}
-
-		&:after {
-			content: "";
-			width: 15px;
-			height: 15px;
-			background: $primary;
-			border: 1px solid $white;
-			float: left;
-			position: absolute;
-			left: -1.6px;
-			top: 0;
-			@include border-radius(50%);
-			@include shadow-bottom($primary);
 		}
 	}
 }
