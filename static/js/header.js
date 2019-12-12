@@ -16,4 +16,4 @@ function initBurger() {
   
 }
 
-window.onload= initBurger;
+window.onload += initBurger;
