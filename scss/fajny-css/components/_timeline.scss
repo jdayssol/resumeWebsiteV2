@@ -21,11 +21,7 @@
 		padding-left: 30px;
 		height: auto;
 
-		h5,
-		small,
-		p {
-			@extend %paMar;
-		}
+		
 
 		&:before {
 			content: "";

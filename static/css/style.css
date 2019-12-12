@@ -13,9 +13,7 @@ h3,
 h4,
 h5,
 h6,
-p, .timeline li h5,
-.timeline li small,
-.timeline li p, .cover-parallax .title-parallax h1,
+p, .cover-parallax .title-parallax h1,
 .cover-parallax .title-parallax h2, .cards h4,
 .cards p, .badge p, .accordion .open-accordion,
 .accordion .accordion-text,
@@ -5635,9 +5633,7 @@ body, .accordion .open-accordion,
 .accordion .accordion-text,
 .accordion p, .badge p, .breadcrumbs, .dropdown .dropdown-content, .cards h4,
 .cards p, footer .footer-container ul, .cover-parallax .title-parallax h1,
-.cover-parallax .title-parallax h2, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks, .timeline li h5,
-.timeline li small,
-.timeline li p {
+.cover-parallax .title-parallax h2, .navbar nav .ul-nav, .header-full nav .ul-nav, .pagination-container .pagination, .tabs .tablinks {
   padding: 0;
   margin: 0;
 }
@@ -5834,7 +5830,6 @@ hr {
 .grid-6 {
   float: left;
   width: 100%;
-  padding: 0 1%;
   margin-left: auto;
   margin-right: auto;
 }
