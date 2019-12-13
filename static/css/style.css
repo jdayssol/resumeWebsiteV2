@@ -5927,6 +5927,19 @@ hr {
   margin-top: -15px;
 }
 
+.list-presentation {
+  list-style: none;
+}
+.list-presentation li:before {
+  content: "";
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-family: "fajny-css-icons";
+  content: "";
+  font-size: 12px;
+}
+
 /*============================================================ Navigation ============================================================*/
 header {
   display: -webkit-box;
