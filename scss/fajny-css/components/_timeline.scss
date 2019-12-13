@@ -5,24 +5,23 @@
 	width: 100%;
 	float: left;
 	margin-bottom: 20px;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-
-	ol {
-		padding-inline-start: 10px;
-	}
 
 	li {
 		position: relative;
 		margin: 0;
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 		padding-left: 30px;
 		height: auto;
+		float: left;
 
 		h5,
 		small,
 		p {
 			@extend %paMar;
+		}
+
+		&:last-child {
+			padding-bottom: 20px;
 		}
 
 		&:before {
@@ -34,5 +33,58 @@
 			left: 5px;
 			width: 3px;
 		}
+
+		&:after {
+			content: "";
+			width: 15px;
+			height: 15px;
+			background: $primary;
+			border: 1px solid $white;
+			float: left;
+			position: absolute;
+			left: -1.6px;
+			top: 0;
+			@include border-radius(50%);
+			@include shadow-bottom($primary);
+		}
+	}
+
+	.list-task {
+		list-style: none;
+		margin-bottom: 20px;
+		float: left;
+		width: 100%;
+
+		@media only screen and (max-width: 600px) {
+			padding-left: 10px;
+		}
+
+		li {
+			padding-left: inherit;
+			width: 100%;
+			padding-bottom: inherit !important;
+			padding-left: 15px;
+
+			
+			
+			&:before {
+				content: normal;
+			}
+	
+			&:after {
+				content: "";
+				border: none;
+				background: none;
+				box-shadow: none;
+				@include icon("\eabb");
+				font-size: 12px;
+
+
+			}
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		padding-left: 0;
 	}
 }

@@ -11,11 +11,44 @@ header {
 
     .logo-jd {
         color: $white !important;
-        background-color: $primary;
+        background-color: $primary !important;
         width: 35px;
         height: 35px;
         text-decoration: none;
         @extend %flexCenter;
         @extend %body-bold;
+    }
+
+    
+
+    .social {
+        @extend %ulNone;
+        @include flexbox(center, flex-start, nowrap);
+
+        li {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a {
+            color: $white !important;
+        }
+    }
+
+    .social-mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .social-mobile {
+            display: inherit;
+        }
+
+        .social-desktop {
+            display: none;
+        }
     }
 }

@@ -10,5 +10,8 @@
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest"
+  },
+  "dependencies": {
+    "swiper": "^5.2.1"
   }
 }

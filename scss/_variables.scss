@@ -1,10 +1,11 @@
 /*============================================================= Colors =============================================================*/
-$primary: #A7BED3;
+$blue: #A7BED3;
+$primary: #6B7987;
 $primary-70: #BDCFDE;
 $primary-50: #D3DEE9;
 $secondary: #F1FFC4;
 $secondary-70: #F5FFD3;
-$secondary-50: #F8FFE1;
+$secondary-50: rgb(57, 59, 49);
 $danger: #ff312e;
 $danger-70: #fd6c6a;
 $danger-50: #fc9593;
@@ -49,6 +50,10 @@ $transparent: transparent;
 
 .bg-white {
     background-color: $white;
+}
+
+.bg-blue {
+    background-color: $blue;
 }
 
 .bg-primary {
