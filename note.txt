@@ -1,7 +1,18 @@
-npm install -g sass
+How to install:
 
+npm install -g sass
 npm install -g grunt-cli
-taper grunt pour démarrer le compilateur sass
+npm install grunt --save-dev
+npm install
+taper grunt to start the compilateur sass. When working on style, edit scss file and let grunt recompile scss file to css.
+
+Install python / pip on Windows
+Download and install python
+Use pip command to install flask ( python for web): pip install flask
+
+Run the website locally by typing python resume.py
+
+
 
 
 
