@@ -1828,7 +1828,7 @@ img {
   color: #618C32;
 }
 .badge.bg-danger {
-  color: #4B0F0E;
+  color: #F2C9D6;
 }
 .badge.bg-warning {
   color: #9C3E23;
@@ -4526,7 +4526,7 @@ table.table-bordered tr td {
 }
 
 .bg-danger {
-  background-color: #ff312e !important;
+  background-color: #F2C9D6 !important;
 }
 
 .bg-success {
