@@ -8,7 +8,7 @@ taper grunt to start the compilateur sass. When working on style, edit scss file
 
 Install python / pip on Windows
 Download and install python
-Use pip command to install flask ( python for web): pip install flask
+Use pip command to install flask ( python for web): pip3 install flask
 
 Run the website locally by typing python resume.py
 
