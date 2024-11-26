@@ -12,6 +12,6 @@
     "grunt-contrib-watch": "latest"
   },
   "dependencies": {
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   }
 }
